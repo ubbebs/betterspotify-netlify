@@ -1,0 +1,17 @@
+.playercontrols {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transform: translateY(3px);
+}
+
+.shuffle, .previous, .next, .repeat, .state {
+    font-size: 30px;
+    color: rgb(255,255,255);
+    transition: 300ms;
+}
+
+.shuffle:hover, .previous:hover, .next:hover, .repeat:hover, .state:hover {
+    filter: drop-shadow(0 0 4px rgba(0,0,0,0.4));
+}

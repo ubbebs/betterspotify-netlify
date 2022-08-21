@@ -1,0 +1,19 @@
+.volume {
+    margin-right: 25px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.volume svg {
+    color: rgb(255,255,255);
+}
+
+.volume-input {
+    width: 200px;
+    height: 5px;
+    background: rgb(255,255,255);
+    outline: none;
+    border-radius: 5px;
+}

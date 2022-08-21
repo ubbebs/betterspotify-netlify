@@ -1,0 +1,25 @@
+.mainplaylists {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.mainplaylists:after{
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+
+.mainplaylists-img {
+    height: 100%;
+}
+
+.mainplaylists-img img {
+    height: 100%;
+    border-radius: 10px;
+}

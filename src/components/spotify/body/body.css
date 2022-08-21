@@ -1,0 +1,119 @@
+.body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.body > * {
+    padding-left: 3%;
+}
+
+.body-title {
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.body-title-h1 > span {
+    position: relative;
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(255,255,255);
+}
+
+.body-title-h1 > span::after {
+    content: '';
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    background-image: url('../../../assets/triangle.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.08;
+    right: -90px;
+    top: -15px;
+}
+
+.body-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.body-left {
+    width: 70%;
+}
+
+.body-left-playlists {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.body-left-playlists-items {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.body-left-topelems {
+    height: 220px;
+    display: flex;
+    gap: 35px;
+    display: flex;
+}
+
+.body-left-topelems-tracks {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.body-left-topelems-tracks-items {
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.body-left-topelems-artists {
+    display: flex;
+    flex-direction: column;
+}
+
+.body-left-topelems-artists-items {
+    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.body-right {
+    height: auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.body-right-items {
+    height: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.body-left-topelems-artists > p, .body-left-playlists > p, .body-left-topelems-tracks > p, .body-right > p {
+    font-size: 12px;
+    color: rgb(165,176,195);
+    text-align: end;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}

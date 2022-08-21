@@ -1,0 +1,25 @@
+.mainartists {
+    height: 80px;
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mainartists-img {
+    height: 80px;
+    width: 80px;
+}
+
+.mainartists-img img {
+    height: 80px;
+    border-radius: 50%;
+}
+
+.mainartists-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(165,176,195);
+    line-height: 12px;
+    margin-left: 10px;
+}
