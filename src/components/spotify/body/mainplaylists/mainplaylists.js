@@ -15,8 +15,7 @@ export default function MainPlaylists() {
           'Content-Type': 'application/json',
         }
       })
-      const random = Math.floor(Math.random() * 16)
-      const items = featuredplaylistsData.data.playlists.items.slice(random,random+4)
+      const items = featuredplaylistsData.data.playlists.items.slice(0,4)
       const featuredplaylists = items.map(({ id, name, images, description }) => {
           return { id, name, images, description }
       })
@@ -27,7 +26,7 @@ export default function MainPlaylists() {
   return (
     featuredplaylists.map(({ id, images }) => {
       const background = {
-        backgroundImage: `url("${images[1].url}")`
+        backgroundImage: `url("${images[0].url}")`
       }
       return (
         <div className='mainplaylists' key={id} style={background}>

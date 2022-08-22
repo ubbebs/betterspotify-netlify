@@ -7,19 +7,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     box-sizing: border-box;
+    border-radius: 2vh;
 }
 
 .mainplaylists:after{
     content: '';
     display: block;
     padding-bottom: 100%;
-  }
-
-.mainplaylists-img {
-    height: 100%;
-}
-
-.mainplaylists-img img {
-    height: 100%;
-    border-radius: 10px;
 }
