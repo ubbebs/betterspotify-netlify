@@ -15,7 +15,8 @@ export default function MainPlaylists() {
           'Content-Type': 'application/json',
         }
       })
-      const items = featuredplaylistsData.data.playlists.items.slice(0,4)
+      const random = Math.floor(Math.random() * 16)
+      const items = featuredplaylistsData.data.playlists.items.slice(random,random+4)
       const featuredplaylists = items.map(({ id, name, images, description }) => {
           return { id, name, images, description }
       })
