@@ -29,6 +29,7 @@ export default function Login() {
             <p>1. Use web browser where you aren't logged to any spotify account</p>
             <p>2. Login there on Spotify (email: ubbebstesting@gmail.com | password: ubbe!5,PoT1F.y$)</p>
             <p>3. Open there this website</p>
+            <p>Control of current playing songs require a premium account</p>
             <div className='login-progress'>
                 <img src={Work} alt=''></img>
                 <div className="login-progress-info">
