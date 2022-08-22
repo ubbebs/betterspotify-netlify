@@ -27,8 +27,9 @@ export default function Login() {
             <button onClick={handleClick}>Connect Spotify</button>
             <p>Version: Netlify.</p>
             <p>Unfortunatelly, you will not connect via your main account... Spotify's Developer Service allow to connect for authorized users only :| The image below shows what the app looks like. If you want to log in:</p>
-            <p>1. Open web browser where you aren't logged to any spotify account</p>
-            <p>2. Login on Spotify on account (email: ubbebstesting@gmail.com | password: ubbe!5,PoT1F.y$)</p>
+            <p>1. Use web browser where you aren't logged to any spotify account</p>
+            <p>2. Login there on Spotify (email: ubbebstesting@gmail.com | password: ubbe!5,PoT1F.y$)</p>
+            <p>3. Open there this website</p>
             <div className='login-progress'>
                 <img src={Work} alt=''></img>
                 <div className="login-progress-info">
