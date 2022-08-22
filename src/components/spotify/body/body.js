@@ -25,13 +25,13 @@ export default function Body() {
           </div>
           <div className='body-left-topelems'>
             <div className="body-left-topelems-tracks">
-              <p>Your Top Tracks</p>
+              <p>Your Top Tracks (last 6 months)</p>
               <div className='body-left-topelems-tracks-items'>
                 <MainTracks/>
               </div>
             </div>
             <div className='body-left-topelems-artists'>
-              <p>Your Top Tracks</p>
+              <p>Your Top Artists (last 6 months)</p>
               <div className='body-left-topelems-artists-items'>
                 <MainArtists/>
               </div>
@@ -39,7 +39,7 @@ export default function Body() {
           </div>
         </div>
         <div className='body-right'>
-          <p>Your Top Tracks</p>
+          <p>Recently Played</p>
           <div className='body-right-items'>
             <MainPlayed/>
           </div>
