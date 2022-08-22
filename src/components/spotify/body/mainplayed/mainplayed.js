@@ -25,10 +25,12 @@ export default function MainPlayed() {
   }, [token, dispatch])
   return (
     recentlyPlayed.map(({ track }) => {
+      const background = {
+        backgroundImage: `url("${track.album.images[1].url}")`
+      }
       return (
         <div className='mainplayed' key={track.id}>
-          <div className='mainplayed-img'>
-            <img src={track.album.images[0].url} alt="Track's cover" />
+          <div className='mainplayed-img' style={background}>
           </div>
           <div className='mainplayed-name'>
             <span>{track.name}</span>

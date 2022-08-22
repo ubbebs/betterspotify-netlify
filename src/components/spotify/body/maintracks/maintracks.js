@@ -32,10 +32,6 @@ export default function MainTracks() {
         <div className='maintracks' key={id}>
           <div className='maintracks-img' style={background}>
           </div>
-          <div className='maintracks-name'>
-            <span>{name}</span>
-            <p>{artists[0].name}</p>
-          </div>
         </div>
       )
     })

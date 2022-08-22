@@ -25,10 +25,14 @@ export default function MainArtists() {
     }, [token, dispatch])
     return (
       artists.map(({ id, name, images }) => {
+        const background = {
+          backgroundImage: `url("${images[1].url}")`
+        }
         return (
           <div className='mainartists' key={id}>
             <div className='mainartists-img'>
-              <img src={images[0].url} alt="Artist's cover" />
+              {/* <img src={images[0].url} alt="Artist's cover" /> */}
+              <div className="mainartists-img-box" style={background}></div>
             </div>
             <div className='mainartists-name'>
               <span>{name}</span>

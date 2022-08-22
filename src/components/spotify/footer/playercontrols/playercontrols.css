@@ -6,6 +6,13 @@
     transform: translateY(3px);
 }
 
+@media screen and (max-width: 750px) {
+    .playercontrols {
+        position: absolute;
+        width: 100%;
+    }
+}
+
 .shuffle, .previous, .next, .repeat, .state {
     font-size: 30px;
     color: rgb(255,255,255);

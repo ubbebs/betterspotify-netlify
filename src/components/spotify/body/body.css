@@ -7,6 +7,7 @@
 
 .body > * {
     padding-left: 3%;
+    padding-right: 3%;
 }
 
 .body-title {
@@ -35,13 +36,38 @@
     top: -15px;
 }
 
+@media screen and (max-width: 500px) {
+    .body-title-h1 > span {
+        font-size: 40px;
+    }
+    
+    .body-title-h1 > span::after {
+        height: 60px;
+        width: 60px;
+        right: -35px;
+        top: 0;
+    }
+}
+
 .body-wrapper {
     width: 100%;
     display: flex;
 }
 
+@media screen and (max-width: 1100px) {
+    .body-wrapper {
+        flex-direction: column-reverse;
+    }
+}
+
 .body-left {
     width: 70%;
+}
+
+@media screen and (max-width: 1100px) {
+    .body-left {
+        width: 100%;
+    }
 }
 
 .body-left-playlists {
@@ -60,33 +86,52 @@
 }
 
 .body-left-topelems {
-    height: 220px;
     display: flex;
-    gap: 35px;
+    gap: 2%;
     display: flex;
 }
 
+
+@media screen and (max-width: 1300px) {
+    .body-left-topelems {
+        flex-direction: column;
+    }
+}
+
 .body-left-topelems-tracks {
-    height: 220px;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+@media screen and (max-width: 1300px) {
+    .body-left-topelems-tracks {
+        width: 100%;
+    }
+}
+
 .body-left-topelems-tracks-items {
-    height: 220px;
+    height: auto;
     display: flex;
-    flex-direction: row;
-    gap: 25px;
+    justify-content: space-between;
+    gap: 1vw;
 }
 
 .body-left-topelems-artists {
+    width: 38%;
     display: flex;
     flex-direction: column;
 }
 
+@media screen and (max-width: 1300px) {
+    .body-left-topelems-artists {
+        width: 100%;
+    }
+}
+
 .body-left-topelems-artists-items {
-    height: 180px;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -95,12 +140,20 @@
 
 .body-right {
     height: auto;
-    width: 30%;
+    width: 27%;
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+@media screen and (max-width: 1100px) {
+    .body-right {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .body-right-items {
@@ -108,6 +161,12 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+}
+
+@media screen and (max-width: 1100px) {
+    .body-right-items {
+        display: block;
+    }
 }
 
 .body-left-topelems-artists > p, .body-left-playlists > p, .body-left-topelems-tracks > p, .body-right > p {

@@ -6,12 +6,48 @@
     align-items: center;
 }
 
+@media screen and (max-width: 500px) {
+    .currenttrack {
+        position: absolute;
+        width: 100%;
+        justify-content: center;
+        transform: translateY(-70px);
+    }
+}
+
 .currenttrack-cover {
     position: absolute;
     width: 200px;
     height: 200px;
     top: -140px;
     left: 25px;
+}
+
+@media screen and (max-width: 1300px) {
+    .currenttrack-cover {
+        width: 150px;
+        height: 150px;
+        left: 50px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .currenttrack-cover {
+        width: 100px;
+        height: 100px;
+        top: -90px;
+        left: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .currenttrack-cover {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        top: 0;
+        left: 0;
+    }
 }
 
 .currenttrack-cover img {
@@ -21,10 +57,55 @@
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
+@media screen and (max-width: 1300px) {
+    .currenttrack-cover img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .currenttrack-cover img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .currenttrack-cover img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
 .currenttrack-info {
     transform: translateX(250px);
     width: 200px;
     text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 1300px) {
+    .currenttrack-info {
+        transform: translateX(25px);
+        width: 200px;
+        text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .currenttrack-info {
+        transform: translateX(135px) translateY(-60px);
+        text-shadow: 0 0 5px #000;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .currenttrack-info {
+        position: relative;
+        transform: translateX(0) translateY(0);
+        margin-left: 10px;
+        width: auto;
+    }
 }
 
 .currenttrack-info span {

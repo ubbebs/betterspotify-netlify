@@ -1,16 +1,16 @@
 .spotify {
-    height: auto;
+    height: 100%;
     min-height: 100vh;
     width: auto;
-    min-width: 100vw;
+    min-width: 100%;
     background-color: rgb(11,18,30);
     display: flex;
     flex-flow: column;
+    padding-bottom: 90px;
 }
 
 .spotify-main {
     height: auto;
-    max-height: 100vh;
     display: flex;
     flex: 1;
 }
@@ -18,5 +18,8 @@
 .spotify-main-body {
     flex: 1;
     display: flex;
+    height: 100%;
     flex-direction: column;
+    box-sizing: border-box;
+    padding-bottom: 50px;
 }

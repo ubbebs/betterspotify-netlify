@@ -10,6 +10,13 @@
     justify-content: space-between;
 }
 
+@media screen and (max-width: 750px) {
+    .footer {
+        height: 60px;
+        justify-content: flex-start;
+    }
+}
+
 .footer::before, .footer::after {
     content: '';
     position: absolute;

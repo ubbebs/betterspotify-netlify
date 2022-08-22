@@ -6,6 +6,12 @@
     gap: 20px;
 }
 
+@media screen and (max-width: 750px) {
+    .volume {
+        display: none;
+    }
+}
+
 .volume svg {
     color: rgb(255,255,255);
 }
