@@ -7,7 +7,7 @@ import './login.css'
 
 export default function Login() {
     const handleClick = () => {
-        const clientID = "7bd2de5233f944d4a6977439871cd12e"
+        const clientID = "15ba43e0e47d4f73b46eb57180d5b4fd"
         const redirectURL = "https://brilliant-buttercream-87ed41.netlify.app/"
         const apiURL = "https://accounts.spotify.com/authorize"
         const scope = [
