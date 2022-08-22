@@ -27,7 +27,7 @@ export default function MainPlaylists() {
   return (
     featuredplaylists.map(({ id, images }) => {
       const background = {
-        backgroundImage: `url("${images[0].url}")`
+        backgroundImage: `url("${images[1].url}")`
       }
       return (
         <div className='mainplaylists' key={id} style={background}>
