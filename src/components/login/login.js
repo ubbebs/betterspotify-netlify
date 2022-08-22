@@ -8,7 +8,7 @@ import './login.css'
 export default function Login() {
     const handleClick = () => {
         const clientID = "7bd2de5233f944d4a6977439871cd12e"
-        const redirectURL = "http://https://brilliant-buttercream-87ed41.netlify.app/:3000/"
+        const redirectURL = "https://brilliant-buttercream-87ed41.netlify.app/"
         const apiURL = "https://accounts.spotify.com/authorize"
         const scope = [
             'user-read-email',
@@ -25,7 +25,8 @@ export default function Login() {
         <div className='login'>
             <img src={BlackLogo} alt=''></img>
             <button onClick={handleClick}>Connect Spotify</button>
-            <p>Unfortunatelly you will not connect... yet. I'm currently working on it, now it's available only for me :|</p>
+            <p>Version: Netlify</p>
+            <p>Unfortunatelly, you will probably not connect... yet. I'm currently working on it :|</p>
             <div className='login-progress'>
                 <img src={Work} alt=''></img>
                 <div className="login-progress-info">
