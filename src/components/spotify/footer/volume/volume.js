@@ -8,7 +8,7 @@ import { GoMute } from 'react-icons/go'
 import './volume.css'
 
 export default function Volume() {
-    const [{ token }] = useStateProvider();
+    const [{ token, currentlyPlaying }] = useStateProvider();
     const setVolume = async (e) => {
         await Axios.put('https://api.spotify.com/v1/me/player/volume',{}, {
             params: {
@@ -32,9 +32,15 @@ export default function Volume() {
         })
     }
     return (
-        <div className='volume'>
-            <GoMute onClick={mute}/>
-            <input type='range' class='volume-input' min={0} max={100} onMouseUp={(e) => setVolume(e)} />
-        </div>
+        <>
+            {
+                currentlyPlaying && (
+                    <div className='volume'>
+                        <GoMute onClick={mute}/>
+                        <input type='range' class='volume-input' min={0} max={100} onMouseUp={(e) => setVolume(e)} />
+                    </div>
+                )
+            }
+        </>
     )
 }
