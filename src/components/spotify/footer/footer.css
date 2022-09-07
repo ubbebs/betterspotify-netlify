@@ -38,3 +38,12 @@
     border-radius: 0 0 50% 0;
     box-shadow: 60px 0 0 0 rgba(117,155,211,1);
 }
+
+@media screen and (max-width: 500px) {
+    .footer::before, .footer::after {
+        content: '';
+        position: absolute;
+        height: 0;
+        width: 0;
+    }
+}

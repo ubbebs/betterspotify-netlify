@@ -6,7 +6,7 @@ import Axios from 'axios'
 import './currenttrack.css'
 
 export default function CurrentTrack() {
-    const [{ token, currentlyPlaying, playerState }, dispatch] = useStateProvider();
+    const [{ token, currentlyPlaying, recentlyPlayed, playerState }, dispatch] = useStateProvider();
     useEffect(() => {
         const getCurrentTrack = async () => {
             const response = await Axios.get('https://api.spotify.com/v1/me/player/currently-playing', {
@@ -29,9 +29,10 @@ export default function CurrentTrack() {
             }
         }
         getCurrentTrack()
-    })
+    }, [])
     return (
         <>
+            {console.log(currentlyPlaying)}
             {
                 currentlyPlaying && (
                     <div className='currenttrack'>

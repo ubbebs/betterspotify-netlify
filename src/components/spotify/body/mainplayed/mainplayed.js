@@ -33,7 +33,7 @@ export default function MainPlayed() {
           <div className='mainplayed-img' style={background}>
           </div>
           <div className='mainplayed-name'>
-            <span>{track.name}</span>
+            {track.name}
             <p>{track.artists[0].name}</p>
           </div>
         </div>

@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
-import Axios from 'axios';
+import Axios from 'axios'
 import './spotify.css'
 
 import Sidebar from './sidebar/sidebar';
-import Body from './body/body';
 import Navbar from './navbar/navbar';
+import Body from './body/body';
 import Footer from './footer/footer';
 import { useStateProvider } from '../../utils/StateProvider';
 import { reducerCases } from '../../utils/Constants';
